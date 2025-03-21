@@ -68,29 +68,19 @@
             height: 100%;
             pointer-events: none;
         }
-
     </style>
 </head>
 <body>
     <canvas class="matrix"></canvas>
     <div class="container">
         <div class="animated-box">
-            <button onclick="copyLink()">পরিত্রাণ</button>
+            <button onclick="openLink()">পরিত্রাণ</button>
         </div>
     </div>
 
     <script>
-        function copyLink() {
-            const hiddenLink = "https://net-gilt-beta.vercel.app/"; 
-
-            const tempInput = document.createElement("input");
-            tempInput.value = hiddenLink;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-
-            alert("💀Send this link to the victim💀");
+        function openLink() {
+            window.open("https://net-gilt-beta.vercel.app/", "_blank");
         }
 
         const canvas = document.querySelector(".matrix");
