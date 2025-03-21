@@ -99,9 +99,7 @@
 <body>
     <audio id="backgroundMusic" loop>
         <source src="tomorrow.mp3" type="audio/mpeg">
-        আপনার ব্রাউজার অডিও প্লে সাপোর্ট করে না।
     </audio>
-
     <div class="container" id="welcomeScreen">
         <div class="overlay"></div>
         <div class="welcome-box">
@@ -110,7 +108,6 @@
             <button class="welcome-button" onclick="startStory()"> হুমকি </button>
         </div>
     </div>
-
     <div class="container story-container" id="storyScreen" style="display: none;">
         <div class="overlay"></div>
         <div class="story-box">
@@ -186,7 +183,7 @@
 
         function nextStory() {
             nextButton.style.display = "none";
-            window.location.href = "attack_theme.html"; // আপনার ইচ্ছামত URL এখানে দিন
+            window.location.href = "attack_theme.html";
         }
     </script>
 </body>
