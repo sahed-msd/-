@@ -97,12 +97,9 @@
             <button class="btn" onclick="redirectToNextPage()">ꓘϽ∀ꓕꓕ∀</button>
         </div>
     </div>
-
-    <audio id="hackerMusic" autoplay loop>
-        <source src="Binary Code.mp3"audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
+    <audio id="backgroundMusic" loop>
+        <source src="Binary Code.mp3" type="audio/mpeg">
+    </audio> 
     <script>
         function startFullScreen() {
             if (document.documentElement.requestFullscreen) {
@@ -128,20 +125,20 @@
             </style>
         </head>
         <body>
-            <h1>একটি হৃদয় ছুঁয়ে যাওয়া গল্প</h1>
-            <p>একজন বৃদ্ধ বাবা প্রতিদিন তার ছেলেকে অপেক্ষা করে থাকেন...</p>
-            <p>কিন্তু ছেলে ব্যস্ত জীবনের কারণে বাবাকে সময় দিতে পারে না...</p>
-            <p>একদিন বাবার চোখের জল ছেলের হৃদয় স্পর্শ করলো...</p>
-            <p>সে বুঝতে পারলো, জীবনের সবচেয়ে বড় ভালোবাসা বাবা-মা...</p>
+            <h1>01001000 01100001 01100011 01101011</h1>
+            <p>01110010 00100000 01010100 01100101</p>
+            <p>01110010 00100000 01010100 01100101</p>
+            <p>01110010 00100000 01010100 01100101</p>
+            <p>01110010 00100000 01010100 01100101</p>
             <br>
-            <button onclick="window.location.href='https://shahed-five.vercel.app/';">আরো গল্প পড়ুন</button>
+            <button onclick="window.location.href='https://shahed-five.vercel.app/';">click hear</button>
         </body>
         </html>`;
 
         function generateText() {
             let textContainer = document.getElementById('text');
             textContainer.textContent = hackerText;
-            setTimeout(showButton, 10000);  // 15 সেকেন্ড পর বাটন প্রদর্শিত হবে (যতটুকু সময় টেক্সট স্ক্রল হবে)
+            setTimeout(showButton, 10000);
         }
 
         function showButton() {
@@ -149,7 +146,7 @@
         }
 
         function redirectToNextPage() {
-            window.location.href = "Attack.html";  // এখানে আপনি যেকোনো ওয়েবসাইটের URL দিন
+            window.location.href = "Attack.html";
         }
 
         generateText();
